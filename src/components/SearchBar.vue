@@ -29,7 +29,7 @@ export default defineComponent({
     return {
       query: '',
       error: null as string | null,
-      debouncedSearch: null as unknown as (query: string) => Promise<void>
+      debouncedSearch: null as unknown as (query: string) => void
     };
   },
   methods: {
@@ -39,14 +39,12 @@ export default defineComponent({
     onInput() {
       this.error = null;
       if (this.query.length > 2) {
-        this.debouncedSearch(this.query).catch((err: Error) => {
-          this.error = err.message;
-        });
+        this.debouncedSearch(this.query);
       }
     }
   },
   created() {
-    this.debouncedSearch = debounce(this.onSearch, 300);
+    this.debouncedSearch = debounce(this.onSearch as (...args: any[]) => any, 300);
   }
 });
 </script>
