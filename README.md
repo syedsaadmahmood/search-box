@@ -13,8 +13,8 @@ This project is a search box component built using Vue.js. The component searche
 - Styling could be done using any CSS framework or preprocessor, with a preference for Tailwind CSS and Sass.
 
 ### Suggestions
-Unit Testing: Adding unit tests for each component using a testing framework like Jest to ensure the components work as expected and to catch potential issues early.
-State management: The test doesn't include state management using Vuex or Pinia, which are crucial for evaluating a candidate's ability to handle the store in large-scale projects. Including these technologies would provide a better assessment of their skills in managing complex state and ensuring efficient data flow throughout the application.
+- **Unit Testing**: Adding unit tests for each component using a testing framework like Jest to ensure the components work as expected and to catch potential issues early.
+- **State management**: The test doesn't include state management using Vuex or Pinia, which are crucial for evaluating a candidate's ability to handle the store in large-scale projects. Including these technologies would provide a better assessment of their skills in managing complex state and ensuring efficient data flow throughout the application.
 
 ## Components
 - **SearchBar**: A component for the search input field.
